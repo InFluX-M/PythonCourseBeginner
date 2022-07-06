@@ -5,8 +5,5 @@ def day_calculator(date):
     date2 = datetime.datetime.strptime("1999-1-14", '%Y-%m-%d')
     i = (date1 - date2).days
     
-    if i<0: print("Not yet born")
-    else: print(i)
-    
-
-day_calculator(input())
+    if i<0: return "Not yet born"
+    else: return i
